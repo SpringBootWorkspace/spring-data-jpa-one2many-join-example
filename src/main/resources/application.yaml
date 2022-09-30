@@ -1,0 +1,23 @@
+#server:
+#  port : 8090
+#spring:
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+#  datasource:
+#    url: "jdbc:postgresql://localhost:5432/davis"
+#    username: postgres
+#    password: password
+
+server:
+  port : 9091
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:sqlserver://sbazuredb123.database.windows.net:1433;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: sbazuredb123
+    password: password@123

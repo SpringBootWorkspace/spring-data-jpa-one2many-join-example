@@ -34,4 +34,14 @@ public class OrderController {
     public List<OrderResponse> getJoinInformation(){
         return customerRepository.getJoinInformation();
     }
+        // by sathish.
+
+    @PostMapping("/product")
+    public Product addProduct(@RequestBody Product product){
+        return productRepository.save ( product );
+    }
+    @GetMapping("/products")
+    public List<Product> getProducts(){
+        return productRepository.findAll ();
+    }
 }

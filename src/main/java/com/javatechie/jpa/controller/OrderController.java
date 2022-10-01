@@ -3,6 +3,7 @@ package com.javatechie.jpa.controller;
 import com.javatechie.jpa.dto.OrderRequest;
 import com.javatechie.jpa.dto.OrderResponse;
 import com.javatechie.jpa.entity.Customer;
+import com.javatechie.jpa.entity.Product;
 import com.javatechie.jpa.repository.CustomerRepository;
 import com.javatechie.jpa.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;

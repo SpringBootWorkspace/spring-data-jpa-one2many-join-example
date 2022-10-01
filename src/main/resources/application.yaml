@@ -16,7 +16,8 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
+      dialect : org.hibernate.dialect.SQLServer2012Dialect
+    #database-platform: org.hibernate.dialect.PostgreSQLDialect
   datasource:
     url: jdbc:sqlserver://sbazuresqlserver.database.windows.net:1433;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
     username: sbazuresqlserver
